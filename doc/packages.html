@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+packages</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<br/>
+<a href="util.html">
+Next:&nbsp;util</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+packages</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+packages
+</h2>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30039">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+CL-ACE-UTIL&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Some utilities used by both APE-WEBSERVICE and ACE-DRS. 
+ </p>
+</div>
+</div>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30040">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+SOAP&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+At the moment, the SOAP package contains just enough SOAP related 
+ things to get CL-ACE to work. Maybe in the future it can be a more 
+ full-fledged SOAP implementation. 
+ </p>
+</div>
+</div>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30041">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+ACERULES-WEBSERVICE&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30042">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+APE-WEBSERVICE&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The CL-ACE package implements the functionality 
+ needed to call the APE webservice and process the structures that it 
+ returns. The structures used in CL-ACE roughly match those in the 
+ webservice documentation [1] and the XML Schema description of APE 
+ output [2]. Names have been adjusted to typical Lisp case, and some 
+ enumerated string values have become keywords. The two main interfaces 
+ to the APE Webservice are the <a href="ape.html#_g30437">
+ape</a>
+and 
+ <a href="ape.html#_g30352">
+invoke-ape-webservice</a>
+functions. The ape 
+ function is intended to be the primary interface to APE results, but 
+ <a href="ape.html#_g30352">
+invoke-ape-webservice</a>
+is provided as a direct 
+ interface to APE. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+[1] <a href="http://attempto.ifi.uzh.ch/site/docs/ape_webservice.html">
+http://attempto.ifi.uzh.ch/site/docs/ape_webservice.html</a>
+
+ </p>
+</li>
+<li>
+<p>
+[2] <a href="http://attempto.ifi.uzh.ch/site/docs/XMLSchema/apews_output.xsd">
+http://attempto.ifi.uzh.ch/site/docs/XMLSchema/apews_output.xsd</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30043">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+ACE-DRS&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The ACE-DRS package implements lisp structures that 
+ correspond to those described in &quot;Discourse Representation Structure 
+ for ACE 6.0&quot; [1], as well as a parser for the DRSXML output format. 
+ As with CL-ACE, names have been adjusted for lisp conventions, and 
+ some processing of values occurs. It should be noted that class slot 
+ and reader names correspond to those described in the DRS report [1] 
+ rather than the element and attribute names that appear in the DRSXML 
+ output. The parsing interface for DRSXML is <a href="drsxml.html#_g30344">
+parse-drsxml</a>
+. 
+ <a href="drsxml.html#_g30344">
+parse-drsxml</a>
+is also called by CL-ACE automatically 
+ when APE-results contain DRSXML output. 
+ </p>
+<p>
+The renaming for Lisp conventions is as follows. The classes 
+ corresponding to ACE entities use the names specified in the &quot;DRS for 
+ ACE 6.0&quot; tech report, with the exceptions that: rather than mixed 
+ case names, the source text is downcased, and #- inserted at the 
+ proper place, and #_ have been converted to #-. So, for instance, 
+ &quot;has_part(GroupRef, MemberRef)&quot; becomes a class has-part with slots 
+ group-ref and member-ref. Readers have been created which are 
+ &lt;class-name&gt;-&lt;slot-name&gt;, e.g., has-part-group-ref, and initargs are 
+ keywordized slot names, e.g., <span class="keyword">
+:group-ref. </span>
+
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+[1] <a href="http://attempto.ifi.uzh.ch/site/pubs/papers/drs_report_6.pdf">
+http://attempto.ifi.uzh.ch/site/pubs/papers/drs_report_6.pdf</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defpackage">
+<div class="defunsignatures">
+<a id="_g30044">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+RACE-WEBSERVICE&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Package]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The race-webservice package provides a set of bindings for calling 
+ the RACE Web Service. The functions defined here try to mimic as 
+ closely as possible the naming conventions of the RACE Web Service, 
+ with only minor renaming to suit Lisp convention. 
+ </p>
+<p>
+The main interface to the RACE Web Service is through the 
+ <a href="race.html#_g30450">
+invoke-race-webservice</a>
+and 
+ <a href="race.html#_g30452">
+race</a>
+functions. 
+ </p>
+<p>
+The former makes requests to the Web Service directly, and returns 
+ results directly from the HTTP client (DRAKMA [2]). For instance, to 
+ recreate the example given in the RACE Web Service documentation [1]: 
+ </p>
+<pre>
+    &quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+      
+     &lt;env:Envelope 
+         xmlns:env=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; 
+         xmlns:race=&quot;http://attempto.ifi.uzh.ch/race&quot;&gt; 
+       &lt;env:Body&gt; 
+         &lt;race:Reply&gt; 
+           &lt;race:Runtime&gt;0&lt;/race:Runtime&gt; 
+           &lt;race:Proof&gt; 
+     	&lt;race:UsedAxioms&gt; 
+     	  &lt;race:Axiom&gt;1: John is a man.&lt;/race:Axiom&gt; 
+     	  &lt;race:Axiom&gt;3: John is not a man.&lt;/race:Axiom&gt; 
+     	&lt;/race:UsedAxioms&gt; 
+     	&lt;race:UsedAuxAxioms/&gt; 
+           &lt;/race:Proof&gt; 
+         &lt;/race:Reply&gt; 
+       &lt;/env:Body&gt; 
+     &lt;/env:Envelope&gt; 
+     &quot;, [more values, see DRAKMA documentation] </pre>
+<p>
+The latter parses the response into a CLOS object, specifically, a 
+ <a href="race.html#_g30454">
+race-reply</a>
+. Methods for accessing the 
+ components of the reply follow, for the most part, the naming 
+ convention given in the RACE Web Service documentation [1], and 
+ accompanying WSDL file [3]. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+[1] <a href="http://attempto.ifi.uzh.ch/site/docs/race_webservice.html">
+http://attempto.ifi.uzh.ch/site/docs/race_webservice.html</a>
+
+ </p>
+</li>
+<li>
+<p>
+[2] <a href="http://weitz.de/drakma/">
+http://weitz.de/drakma/</a>
+
+ </p>
+</li>
+<li>
+<p>
+[3] <a href="http://attempto.ifi.uzh.ch/race_files/race.wsdl">
+http://attempto.ifi.uzh.ch/race_files/race.wsdl</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2009-06-20 14:28:01</div>
+</body>
+</html>

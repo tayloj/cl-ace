@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+expressions</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="drs.html">
+Prev:&nbsp;drs</a>
+<br/>
+<a href="drsxml.html">
+Next:&nbsp;drsxml</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+expressions</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+expressions
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="expressions.html#_g76060">
+read-expression</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> (input *standard-input*) (no-expression-error-p t) (eof-error-p t) eof-value</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="expressions.html#_g76061">
+read-expression-from-string</a>
+</td>
+<td class="summary">
+string <em>&amp;optional</em> (no-expression-error-p t) (eof-error-p t) eof-value <em>&amp;key</em> (start 0) end</td>
+</tr>
+</table>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g76060">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> (input *standard-input*) (no-expression-error-p t) (eof-error-p t) eof-value</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+read-expression &amp;optional input no-expression-error-p eof-error-p eof-value 
+ =&gt; result* 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+input --- an input stream 
+ </p>
+</li>
+<li>
+<p>
+no-expression-error-p, eof-error-p --- generalized booleans, default is t 
+ </p>
+</li>
+<li>
+<p>
+eof-value --- an object, default is nil 
+ </p>
+</li>
+<li>
+<p>
+results --- an expression, eof-value, or a token and value as 
+ primary and secondary values 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+read-expression attempts to read an expression from the input. If an 
+ expression can be read, it is returned. If an expression cannot be 
+ read, it is either because an EOF was envountered, or because a token 
+ was read but was not one beginning an expression. If and EOF was 
+ enountered, behavior is detemined by eof-error-p and eof-value, as to 
+ READ, &amp;c. If tokens are available, but do not begin an expression, 
+ behavior is determined by no-error-expression-p. If this value is 
+ true, then an error is signalled. Otherwise, the token and its 
+ associated value are returned as primary and secondary values. 
+ </p>
+<h4>
+Examples: </h4>
+<p>
+Reading a named expression: 
+ </p>
+<pre>
+    (read-expression) 
+     &gt;&gt; named('John') 
+     =&gt; #&lt;named(John)&gt; </pre>
+<p>
+Reading a compound expression: 
+ </p>
+<pre>
+    (ace-drs:read-expression) 
+     &gt;&gt; expr(&amp;,string(hello),string(' world!')) 
+     =&gt; #&lt;expr(CONCATENATE,#&lt;string(hello)&gt;,#&lt;string( world!)&gt;)&gt; </pre>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g76061">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-expression-from-string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string <em>&amp;optional</em> (no-expression-error-p t) (eof-error-p t) eof-value <em>&amp;key</em> (start 0) end</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+read-expression-from-string 
+ string &amp;optional no-expression-error-p eof-error-p eof-value &amp;key start end 
+ =&gt; result* 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+string --- a string 
+ </p>
+</li>
+<li>
+<p>
+no-expression-error-p, eof-error-p, eof-value --- as to read-expression 
+ </p>
+</li>
+<li>
+<p>
+start, end --- bounding index designators for string 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+read-expression-from-string reads an expression from string by 
+ creating an input string stream (via WITH-INPUT-FROM-STRING and 
+ passing it to <a href="expressions.html#_g76060">
+read-expression</a>
+. 
+ </p>
+<h4>
+Examples: </h4>
+<pre>
+    (ace-drs:read-expression-from-string 
+      &quot;medalist([int(1),real(2)])&quot; t t nil :start 4) 
+     =&gt; #&lt;list([#&lt;int(1)&gt;,#&lt;string(three)&gt;])&gt; </pre>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2010-06-24 16:58:46</div>
+</body>
+</html>

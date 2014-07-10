@@ -1,0 +1,1339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+util</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="packages.html">
+Prev:&nbsp;packages</a>
+<br/>
+<a href="drs.html">
+Next:&nbsp;drs</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+util</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+util
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30055">
+keywordify</a>
+</td>
+<td class="summary">
+string</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30053">
+make-node-attribute-plist</a>
+</td>
+<td class="summary">
+node <em>&amp;rest</em> args</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30054">
+make-node-instance</a>
+</td>
+<td class="summary">
+class node <em>&amp;rest</em> initargs</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30049">
+map-node-list</a>
+</td>
+<td class="summary">
+fn node-list <em>&amp;aux</em> (results (quote nil))</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30058">
+parse-float</a>
+</td>
+<td class="summary">
+string <em>&amp;key</em> (start 0) end</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30059">
+parse-real</a>
+</td>
+<td class="summary">
+string <em>&amp;key</em> (start 0) end</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30057">
+parse-type</a>
+</td>
+<td class="summary">
+type string <em>&amp;key</em> (start 0) end</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30062">
+prompt-for-line</a>
+</td>
+<td class="summary">
+message <em>&amp;rest</em> args</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30056">
+read-safely-from-string</a>
+</td>
+<td class="summary">
+string <em>&amp;optional</em> (eof-error-p t) eof-value <em>&amp;key</em> (start 0) end preserve-whitespace</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30061">
+split-sequence</a>
+</td>
+<td class="summary">
+separators sequence <em>&amp;key</em> (test (quote eql)) key coalesce-separators</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30060">
+strcat</a>
+</td>
+<td class="summary">
+<em>&amp;rest</em> string-designators</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30051">
+text-content</a>
+</td>
+<td class="summary">
+node</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Macro summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30046">
+define-restart-function</a>
+</td>
+<td class="summary">
+name lambda-list <em>&amp;body</em> decls-and-docs</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30048">
+do-element-nodes</a>
+</td>
+<td class="summary">
+(var node-list-form <em>&amp;optional</em> result-form) <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30050">
+map-element-nodes</a>
+</td>
+<td class="summary">
+function node-list</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30052">
+pcase</a>
+</td>
+<td class="summary">
+keyform predicate <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30063">
+with-namespaces</a>
+</td>
+<td class="summary">
+bindings <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="util.html#_g30064">
+with-soap-envelope</a>
+</td>
+<td class="summary">
+(prefix <em>&amp;rest</em> bindings) <em>&amp;body</em> body</td>
+</tr>
+</table>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30049">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+map-node-list&nbsp;&nbsp;</td>
+<td class="lambda-list">
+fn node-list <em>&amp;aux</em> (results (quote nil))</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+map-nodes function node-list =&gt; results 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+function --- a function of one argument 
+ </p>
+</li>
+<li>
+<p>
+node-list --- a dom:node-list 
+ </p>
+</li>
+<li>
+<p>
+results --- a list 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+map-nodes is like dom:map-node-list, but returns a list of the results 
+ of calling function on the nodes, so it is more like CL:MAPCAR. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30051">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+text-content&nbsp;&nbsp;</td>
+<td class="lambda-list">
+node</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+text-content node =&gt; content 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+node --- a dom:node 
+ </p>
+</li>
+<li>
+<p>
+content --- a string 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+text-content attempts to extract the text content of the node. If the 
+ node has no child nodes, then content is the zero-length string &quot;&quot;. 
+ Otherwise, content is the dom:data of node's first child. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30053">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-node-attribute-plist&nbsp;&nbsp;</td>
+<td class="lambda-list">
+node <em>&amp;rest</em> args</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+make-node-attribute-plist node {plist-key specifier}* =&gt; plist 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+node --- a Closure XML dom:node 
+ </p>
+</li>
+<li>
+<p>
+plist-key --- a symbol 
+ </p>
+</li>
+<li>
+<p>
+specifier <span class="keyword">
+::= </span>
+attribute-name | (attribute-name &amp;key key optional) 
+ </p>
+</li>
+<li>
+<p>
+attribute-name --- a string designator 
+ </p>
+</li>
+<li>
+<p>
+key --- a function or symbol 
+ </p>
+</li>
+<li>
+<p>
+optional --- a generalized boolean 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Make-node-attribute-plist builds a plist whose keys are the plist-keys 
+ and whose values are based the corresponding specifier and XML 
+ attribute values of the node. Values are computed as follows: 
+ </p>
+<ul>
+<li>
+<p>
+In the case that specifier is simply attribute-name, i.e., a string 
+ designator, then the value of the corresponding plist-key is the value 
+ of the XML attribute with the name designated by attribute-name. 
+ </p>
+</li>
+<li>
+<p>
+In the case that specifier is a list, then key is applied to the XML 
+ attribute value and the result is used as the value in the resulting 
+ plist. If optional is non-nil, then if the attribute is not specified 
+ for the DOM node, the the plist-key is skipped. 
+ </p>
+</li>
+</ul>
+<h4>
+Examples: </h4>
+<p>
+Where node is a dom:node representing &lt;element att1=&quot;val1&quot; /&gt;: 
+ </p>
+<pre>
+     (make-node-attribute-plist node :foo &quot;att1&quot;) 
+        =&gt; (:foo &quot;att1&quot;) 
+     (make-node-attribute-plist node :foo '(&quot;att1&quot; :key reverse)) 
+        =&gt; (:foo &quot;1tta&quot;) 
+     (make-node-attribute-plist node :foo '(&quot;att2&quot; :key intern)) 
+        =&gt; (:foo ||) 
+     (make-node-attribute-plist node :foo '(&quot;att2&quot; :key intern :optional t)) 
+        =&gt; () </pre>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30054">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-node-instance&nbsp;&nbsp;</td>
+<td class="lambda-list">
+class node <em>&amp;rest</em> initargs</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+make-node-instance class node &amp;rest initargs =&gt; object 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+class --- a class, or symbol that names a class 
+ </p>
+</li>
+<li>
+<p>
+node --- a cxml dom:node 
+ </p>
+</li>
+<li>
+<p>
+initargs --- a plist 
+ </p>
+</li>
+<li>
+<p>
+object --- an object of type class 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Make-node-instance is a simple wrapper that applies make-instance to 
+ class and initialization arguments that are generated by 
+ make-node-attribute-plist from node and initargs. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30055">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+keywordify&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+keywordify string =&gt; keyword 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+string --- a string designator 
+ </p>
+</li>
+<li>
+<p>
+keyword --- a keyword 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Keywordify returns a keyword whose symbol name is the result of 
+ replacing #\_ with #\- in the string-upcase'd string. 
+ </p>
+<h4>
+Examples: </h4>
+<pre>
+    (keywordify &quot;comp_than&quot;) =&gt; :comp-than </pre>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30056">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-safely-from-string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string <em>&amp;optional</em> (eof-error-p t) eof-value <em>&amp;key</em> (start 0) end preserve-whitespace</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+read-safely-from-string string 
+ &amp;optional eof-error-p t eof-value 
+ &amp;key start end preserve-whitespace 
+ =&gt; object, position 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<p>
+Arguments and Values are exactly those of READ-FROM-STRING. 
+ </p>
+<h4>
+Description: </h4>
+<p>
+read-safely-from-string binds *READ-EVAL* to NIL, and calls 
+ READ-FROM-STRING with its arguments. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30057">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+type string <em>&amp;key</em> (start 0) end</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+parse-type type string &amp;key start end =&gt; value 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+type --- a type specifier 
+ </p>
+</li>
+<li>
+<p>
+string --- a string 
+ </p>
+</li>
+<li>
+<p>
+start, end --- bounding index designators of string. Defaults are 0 
+ and nil, respectively. 
+ </p>
+</li>
+<li>
+<p>
+float --- the parsed value 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Reads a value from string using read-safely-from-string. If the value 
+ satifies the type specifier, it is returned. Otherwise an error is 
+ signalled. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30058">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-float&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string <em>&amp;key</em> (start 0) end</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+parse-float string &amp;key start end =&gt; float 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+string --- a string 
+ </p>
+</li>
+<li>
+<p>
+start, end --- bounding index designators of string. Defaults are 0 
+ and nil, respectively. 
+ </p>
+</li>
+<li>
+<p>
+float --- the parsed float 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Equivalent to (parse-type 'float string <span class="keyword">
+:start </span>
+start <span class="keyword">
+:end </span>
+end). 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30059">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-real&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string <em>&amp;key</em> (start 0) end</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+parse-real string &amp;key start end =&gt; real 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+string --- a string 
+ </p>
+</li>
+<li>
+<p>
+start, end --- bounding index designators of string. Defaults are 0 
+ and nil, respectively 
+ </p>
+</li>
+<li>
+<p>
+real --- the parsed real 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Equivalent to (parse-type 'real string <span class="keyword">
+:start </span>
+start <span class="keyword">
+:end </span>
+end). 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30060">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+strcat&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;rest</em> string-designators</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+strcat &amp;rest string-designators =&gt; string 
+ * Argument and Values: 
+ </p>
+<ul>
+<li>
+<p>
+string-designators --- string designators 
+ </p>
+</li>
+<li>
+<p>
+string --- a string 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+strcat returns a string which is the concatenation of the designated 
+ strings. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30061">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+split-sequence&nbsp;&nbsp;</td>
+<td class="lambda-list">
+separators sequence <em>&amp;key</em> (test (quote eql)) key coalesce-separators</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+split-sequence separators sequence &amp;key key test coalesce-separators =&gt; result 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+separators --- a sequence of separators 
+ </p>
+</li>
+<li>
+<p>
+sequence --- a sequent to split 
+ </p>
+</li>
+<li>
+<p>
+key --- a function of one argument or nil 
+ </p>
+</li>
+<li>
+<p>
+test --- a function of two arguments, default is eql 
+ </p>
+</li>
+<li>
+<p>
+coalesce-separators --- a boolean 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+split-sequence returns a list of sequences of the same type as 
+ sequences (extracted using subseq) where the subsequences are 
+ contiguous subsequences of sequence, delimited by any element of 
+ separators. Separators are found within sequence using test and key. 
+ If coalesce-separators is non-nil, then separators within sequence are 
+ merged (i.e., result will contain no empty sequences). 
+ </p>
+<h4>
+Examples: </h4>
+<pre>
+     (split-sequence #(a) '(t i a r a)) 
+     =&gt; ((T I) (R) NIL) 
+     (split-sequence #(a) '(t i a r a) :coalesce-separators t) 
+     =&gt; ((T I) (R)) </pre>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30062">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+prompt-for-line&nbsp;&nbsp;</td>
+<td class="lambda-list">
+message <em>&amp;rest</em> args</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+prompt-for-line message &amp;rest args =&gt; line, okp 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+message --- a format control 
+ </p>
+</li>
+<li>
+<p>
+args --- arguments used by format 
+ </p>
+</li>
+<li>
+<p>
+line --- a string 
+ </p>
+</li>
+<li>
+<p>
+okp --- a boolean 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Prompts for a line of input on *query-io* after presenting the message 
+ using the args. A line is read from *query-io*. If the call to 
+ read-line returns without an error, the line that was read is 
+ returned, and okp is true. Otherwise the empty string is returned, 
+ and okp is false. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30046">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+define-restart-function&nbsp;&nbsp;</td>
+<td class="lambda-list">
+name lambda-list <em>&amp;body</em> decls-and-docs</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+define-restart-function name lambda-list [[declaration* | documentation]] 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+name --- a symbol, not evaluated 
+ </p>
+</li>
+<li>
+<p>
+lambda-list --- a list of symbols 
+ </p>
+</li>
+<li>
+<p>
+documentation --- a string, not evaluated 
+ </p>
+</li>
+<li>
+<p>
+declaration --- a declare expression, not evaluated 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+define-restart-function defines a function named name whose 
+ lambda-list is like the specified lambda-list, but with one final 
+ optional argument, the condition object. The function is defined with 
+ DEFUN. The function searches for a restart named name (using 
+ FIND-RESTART, name, and the condition object), and if a restart is 
+ found, it is invoked with INVOKE-RESTART and the variables defined by 
+ the lambda-list (but not the condition object). 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30048">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+do-element-nodes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(var node-list-form <em>&amp;optional</em> result-form) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+do-element-nodes (var node-list-form [result-form]) form* 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+var --- a symbol 
+ </p>
+</li>
+<li>
+<p>
+node-list-form --- a form 
+ </p>
+</li>
+<li>
+<p>
+result-form --- a form 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+do-element-nodes is similar to dom:do-node-list, but body is only 
+ evaluated for a particular node when the node's dom:node-type is 
+ <span class="keyword">
+:ELEMENT. </span>
+
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30050">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+map-element-nodes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+function node-list</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+map-element=mpdes function node-list =&gt; result-list 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+function --- a function-designator 
+ </p>
+</li>
+<li>
+<p>
+node-list --- a node list 
+ </p>
+</li>
+<li>
+<p>
+result-list --- a list 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+map-element-nodes returns a list whose elements are the result of 
+ calling function on each element of the node-list (in order). 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30052">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+pcase&nbsp;&nbsp;</td>
+<td class="lambda-list">
+keyform predicate <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<ul>
+<li>
+<p>
+pcase keyform {clause}* =&gt; result* 
+ </p>
+</li>
+<li>
+<p>
+clause::= (keys form*) 
+ </p>
+</li>
+</ul>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+keyform --- a form; evaluated to produce a test-key 
+ </p>
+</li>
+<li>
+<p>
+predicate --- a form; evaluated to produce a funcallable object 
+ </p>
+</li>
+<li>
+<p>
+keys --- a designator for a list of objects. The symbols t and otherwise 
+ may not be used as the keys designator. 
+ </p>
+</li>
+<li>
+<p>
+results --- the values returned by the forms in the matching of clause. 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Pcase is like case, except that the test-key is compared to the keys 
+ by predicate. 
+ </p>
+<h4>
+Examples: </h4>
+<pre>
+    (pcase 'foo #'string-equal 
+       ((bar) 'bar) 
+       ((&quot;foo&quot;) 'foo)) 
+      =&gt; foo </pre>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30063">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-namespaces&nbsp;&nbsp;</td>
+<td class="lambda-list">
+bindings <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+with-namespaces ({(prefix uri)}*) form* =&gt; result 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+prefix --- a namespace prefix (a string) 
+ </p>
+</li>
+<li>
+<p>
+uri --- a string denoting a URI 
+ </p>
+</li>
+<li>
+<p>
+form --- a form 
+ </p>
+</li>
+<li>
+<p>
+result --- the result of evaluating forms 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+with-namespaces evalutes forms with the the namespace bindings 
+ provided. I.e., it reduces nesting of CXML:WITH-NAMESPACE forms. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30064">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-soap-envelope&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(prefix <em>&amp;rest</em> bindings) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+with-soap-envelope (soap-prefix {(prefix uri)}*) form* =&gt; envelope 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+soap-prefix, prefix --- namespace abbreviations/prefixes 
+ </p>
+</li>
+<li>
+<p>
+uri --- string denoting a URI 
+ </p>
+</li>
+<li>
+<p>
+forms --- forms 
+ </p>
+</li>
+<li>
+<p>
+envelope --- a CXML:ROD (probably a string) 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+with-soap-envelope evalutes forms within a CXML:WITH-XML-OUTPUT with 
+ the following XML namespaces. prefix is bound to the SOAP envelope 
+ prefix, i.e., &quot;http://schemas.xmlsoap.org/soap/envelope/&quot;. Any 
+ other namespace bindings provided are also in effect. Forms are 
+ evaluated within two CXML:WITH-ELEMENTs, the SOAP Envelope and the 
+ SOAP Body. A CXML:ROD (probably a string) is returned. 
+ </p>
+<h4>
+Examples: </h4>
+<pre>
+    (with-soap-envelope 
+         (&quot;env&quot; (&quot;foo&quot; &quot;http://foo.example.org&quot;) 
+                (&quot;bar&quot; &quot;http://bar.example.org&quot;)) 
+       (cxml:with-element* (&quot;foo&quot; &quot;a&quot;) 
+         (cxml:with-element* (&quot;bar&quot; &quot;b&quot;) 
+           (cxml:text &quot;Text Content&quot;)))) 
+     =&gt;  
+     &quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+      &lt;env:Envelope xmlns:env=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; 
+                    xmlns:foo=&quot;http://foo.example.org&quot; 
+                    xmlns:bar=&quot;http://bar.example.org&quot;&gt; 
+        &lt;env:Body&gt; 
+          &lt;foo:a&gt; 
+            &lt;bar:b&gt;Text Content&lt;/bar:b&gt; 
+          &lt;/foo:a&gt; 
+        &lt;/env:Body&gt; 
+      &lt;/env:Envelope&gt;&quot; </pre>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2009-06-20 14:28:01</div>
+</body>
+</html>

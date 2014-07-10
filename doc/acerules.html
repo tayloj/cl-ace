@@ -1,0 +1,1136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+acerules</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="race.html">
+Prev:&nbsp;race</a>
+<br/>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+acerules</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+acerules
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Constant summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30483">
++acerules-prefix+</a>
+</td>
+<td class="summary">
+&quot;http://attempto.ifi.uzh.ch/acerules&quot;</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30482">
++acerules-webservice+</a>
+</td>
+<td class="summary">
+&quot;http://attempto.ifi.uzh.ch/ws/acerules/acerulesws.perl&quot;</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Class summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30486">
+acerules-reply</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30493">
+step</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Method summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30487">
+acerules-reply-ace-trace</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30490">
+acerules-reply-answersets</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30489">
+acerules-reply-answertexts</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30492">
+acerules-reply-rules</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30491">
+acerules-reply-simple-rules</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30488">
+acerules-reply-trace</a>
+</td>
+<td class="summary">
+acerules-reply</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30494">
+step-consistent</a>
+</td>
+<td class="summary">
+step</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30495">
+step-delete</a>
+</td>
+<td class="summary">
+step</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30496">
+step-raw</a>
+</td>
+<td class="summary">
+step</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30497">
+acerules</a>
+</td>
+<td class="summary">
+<em>&amp;rest</em> args <em>&amp;key</em> program mode user-lexicon-url guess max-answers rules-output simple-rules-output answerset-output answertext-output trace-output ace-trace-output uri drakma-parameters</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="acerules.html#_g30484">
+invoke-acerules-webservice</a>
+</td>
+<td class="summary">
+<em>&amp;rest</em> args <em>&amp;key</em> program mode user-lexicon-url guess max-answers rules-output simple-rules-output answerset-output answertext-output trace-output ace-trace-output (uri +acerules-webservice+) (drakma-parameters (quote (:method :post)))</td>
+</tr>
+</table>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30486">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:rules&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:simple-rules&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:answersets&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:answertexts&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ace-trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+answersets&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+A list of the string contents of the Answerset elements. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+answertexts&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+A list of the string contents of Answertext elements. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+A list of step objects. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+ace-trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+A list of step objects. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30487">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-ace-trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ace-trace of the specified acerules-reply 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30488">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-trace&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the trace of the specified acerules-reply 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30489">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-answertexts&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the answertexts of the specified acerules-reply 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30490">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-answersets&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the answersets of the specified acerules-reply 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30491">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-simple-rules&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the simple-rules of the specified acerules-reply 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30492">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules-reply-rules&nbsp;&nbsp;</td>
+<td class="lambda-list">
+acerules-reply</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the rules of the specified acerules-reply 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30493">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+step&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:raw&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:delete&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:consistent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+delete&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The delete slot is used only for steps in the Trace element, and 
+ is always used there. It is never used (and so always unbound) 
+ for steps in the ACETrace element. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30494">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+step-consistent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+step</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the consistent of the specified step 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30495">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+step-delete&nbsp;&nbsp;</td>
+<td class="lambda-list">
+step</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the delete of the specified step 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30496">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+step-raw&nbsp;&nbsp;</td>
+<td class="lambda-list">
+step</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the raw of the specified step 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defconstant">
+<div class="defunsignatures">
+<a id="_g30482">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
++acerules-webservice+&nbsp;&nbsp;</td>
+<td class="lambda-list">
+&quot;http://attempto.ifi.uzh.ch/ws/acerules/acerulesws.perl&quot;</td>
+<td class="symbol-type">
+&nbsp;[Constant]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The URL of the AceRules webservice: 
+ http://attempto.ifi.uzh.ch/ws/acerules/acerulesws.perl 
+ </p>
+</div>
+</div>
+<div class="defconstant">
+<div class="defunsignatures">
+<a id="_g30483">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
++acerules-prefix+&nbsp;&nbsp;</td>
+<td class="lambda-list">
+&quot;http://attempto.ifi.uzh.ch/acerules&quot;</td>
+<td class="symbol-type">
+&nbsp;[Constant]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The AceRules prefix in the SOAP requests and replies: 
+ http://attempto.ifi.uzh.ch/acerules 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30484">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+invoke-acerules-webservice&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;rest</em> args <em>&amp;key</em> program mode user-lexicon-url guess max-answers rules-output simple-rules-output answerset-output answertext-output trace-output ace-trace-output (uri +acerules-webservice+) (drakma-parameters (quote (:method :post)))</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+invoke-acerules-webservice &amp;rest keys =&gt; result 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<p>
+invoke-acerules-webservice accepts the following keyword arguments, 
+ which are based on those of the webservice. See the documentation on 
+ the AceRules Webservice [1] for more details. 
+ </p>
+<ul>
+<li>
+<p>
+<span class="keyword">
+:program </span>
+--- a string of ACE text 
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:mode </span>
+--- a string designator that must be string-equal to one of 
+ &quot;court&quot;, &quot;courteous&quot;, &quot;stable&quot;, &quot;stable_strong&quot;, or 
+ &quot;stable-strong&quot;. This is subtly different from the webservice's 
+ &quot;court&quot;, &quot;stable&quot;, and &quot;stable_strong&quot;, but intended to be more 
+ flexible and Lisp-like, allowing, particularly, the keywords 
+ <span class="keyword">
+:courteous, </span>
+<span class="keyword">
+:stable, </span>
+and <span class="keyword">
+:stable-strong. </span>
+
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:user-lexicon-url </span>
+--- a string denoting a URL 
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:max-answers </span>
+--- a positive integer 
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:guess, </span>
+<span class="keyword">
+:rules-output, </span>
+<span class="keyword">
+:simple-rules-output, </span>
+<span class="keyword">
+:answerset-output, </span>
+
+ <span class="keyword">
+:answertext-output, </span>
+<span class="keyword">
+:trace-output, </span>
+<span class="keyword">
+:ace-trace-output </span>
+--- generalized 
+ booleans 
+ invoke-acerules-webservice also accepts two other keyword arguments: 
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:uri </span>
+--- the uri to which the SOAP request is sent. The default 
+ value is +acerules-webservice+ 
+ </p>
+</li>
+<li>
+<p>
+<span class="keyword">
+:drakma-parameters </span>
+--- a plist used as arguments to 
+ drakma:http-request. The default is '(:method <span class="keyword">
+:POST). </span>
+See the 
+ DRAKMA documentation [2] for more details. Note that 
+ invoke-acerules-webserbservice specifies the content, so a <span class="keyword">
+:content </span>
+
+ argument in drakma-parameters will be ignored. 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+invoke-acerules-webservice sends a AceRules to URI using 
+ DRAKMA:HTTP-REQUEST. The values from DRAKMA:HTTP-REQUEST are returned 
+ directly---no post-processing is done. For post-processing (e.g., 
+ parsing into CLOS objects, see <a href="acerules.html#_g30497">
+acerules</a>
+. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+<a href="acerules.html#_g30497">
+acerules</a>
+
+ </p>
+</li>
+<li>
+<p>
+[1] <a href="http://attempto.ifi.uzh.ch/site/docs/acerules_webservice.html">
+http://attempto.ifi.uzh.ch/site/docs/acerules_webservice.html</a>
+
+ </p>
+</li>
+<li>
+<p>
+[2] <a href="http://www.weitz.de/drakma/#http-request">
+http://www.weitz.de/drakma/#http-request</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30497">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+acerules&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;rest</em> args <em>&amp;key</em> program mode user-lexicon-url guess max-answers rules-output simple-rules-output answerset-output answertext-output trace-output ace-trace-output uri drakma-parameters</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+acerules &amp;rest args =&gt; result 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+args --- keyword arguments. 
+ </p>
+</li>
+<li>
+<p>
+result --- an <a href="acerules.html#_g30486">
+acerules-reply</a>
+
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+The arguments accepted by acerules are those accepted by 
+ <a href="acerules.html#_g30484">
+invoke-acerules-webservice</a>
+. 
+ These are passed through directly to invoke-acerules-webservice. 
+ Unlike invoke-acerules-webservice, which returns its values directly 
+ from DRAKMA:HTTP-REQUEST, acerules parses the reply into corresponding 
+ CLOS classes, viz.: <a href="acerules.html#_g30486">
+acerules-reply</a>
+and 
+ <a href="acerules.html#_g30493">
+step</a>
+. 
+ </p>
+<h4>
+Notes: </h4>
+<p>
+Since acerules attempts to parse the result of 
+ <a href="acerules.html#_g30484">
+invoke-acerules-webservice</a>
+which, in turn, 
+ returns values from DRAKMA:HTTP-REQUEST, drakma-parameters is passed 
+ to <a href="acerules.html#_g30484">
+invoke-acerules-webservice</a>
+with 
+ <span class="keyword">
+:WANT-STREAM </span>
+NIL. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+<a href="acerules.html#_g30484">
+invoke-acerules-webservice</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="acerules.html#_g30486">
+acerules-reply</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2009-06-20 14:28:01</div>
+</body>
+</html>

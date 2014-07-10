@@ -1,0 +1,5945 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+drs</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="util.html">
+Prev:&nbsp;util</a>
+<br/>
+<a href="expressions.html">
+Next:&nbsp;expressions</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+drs</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+drs
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Class summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30274">
+admissibility</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30299">
+command</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30086">
+compound-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30245">
+disjunction</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30306">
+drs</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30096">
+drs-condition</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30073">
+expression</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30202">
+has-part</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30237">
+implication</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30077">
+int-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30090">
+list-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30176">
+modifier-adv</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30189">
+modifier-pp</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30074">
+named-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30260">
+necessity</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30223">
+negation</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30230">
+negation-as-failure</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30114">
+object</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30253">
+possibility</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30160">
+predicate</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30133">
+property</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30283">
+proposition</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30214">
+query</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30292">
+question</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30080">
+real-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30267">
+recommendation</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30066">
+referent</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30149">
+relation</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30101">
+sentid-mixin</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30093">
+set-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30083">
+string-expression</a>
+</td>
+<td class="summary">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30104">
+type-mixin</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Method summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30275">
+admissibility-drs</a>
+</td>
+<td class="summary">
+admissibility</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30300">
+command-drs</a>
+</td>
+<td class="summary">
+command</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30087">
+compound-expression-arguments</a>
+</td>
+<td class="summary">
+compound-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30088">
+compound-expression-operator</a>
+</td>
+<td class="summary">
+compound-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30247">
+disjunction-drs1</a>
+</td>
+<td class="summary">
+disjunction</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30246">
+disjunction-drs2</a>
+</td>
+<td class="summary">
+disjunction</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30307">
+drs-conditions</a>
+</td>
+<td class="summary">
+drs</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30308">
+drs-domain</a>
+</td>
+<td class="summary">
+drs</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30205">
+has-part-group-ref</a>
+</td>
+<td class="summary">
+has-part</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30204">
+has-part-member-ref</a>
+</td>
+<td class="summary">
+has-part</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30203">
+has-part-sentid</a>
+</td>
+<td class="summary">
+has-part</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30239">
+implication-antecedent</a>
+</td>
+<td class="summary">
+implication</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30238">
+implication-consequent</a>
+</td>
+<td class="summary">
+implication</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30078">
+int-expression-integer</a>
+</td>
+<td class="summary">
+int-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30091">
+list-expression-elements</a>
+</td>
+<td class="summary">
+list-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30180">
+modifier-adv-adverb</a>
+</td>
+<td class="summary">
+modifier-adv</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30179">
+modifier-adv-degree</a>
+</td>
+<td class="summary">
+modifier-adv</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30181">
+modifier-adv-ref</a>
+</td>
+<td class="summary">
+modifier-adv</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30177">
+modifier-adv-sentid</a>
+</td>
+<td class="summary">
+modifier-adv</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30178">
+modifier-adv-type</a>
+</td>
+<td class="summary">
+modifier-adv</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30193">
+modifier-pp-preposition</a>
+</td>
+<td class="summary">
+modifier-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30194">
+modifier-pp-ref1</a>
+</td>
+<td class="summary">
+modifier-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30192">
+modifier-pp-ref2</a>
+</td>
+<td class="summary">
+modifier-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30190">
+modifier-pp-sentid</a>
+</td>
+<td class="summary">
+modifier-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30191">
+modifier-pp-type</a>
+</td>
+<td class="summary">
+modifier-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30075">
+named-expression-name</a>
+</td>
+<td class="summary">
+named-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30261">
+necessity-drs</a>
+</td>
+<td class="summary">
+necessity</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30231">
+negation-as-failure-drs</a>
+</td>
+<td class="summary">
+negation-as-failure</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30224">
+negation-drs</a>
+</td>
+<td class="summary">
+negation</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30118">
+object-count</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30116">
+object-dim-type</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30122">
+object-noun</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30119">
+object-op</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30121">
+object-quant</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30123">
+object-ref</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30115">
+object-sentid</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30117">
+object-type</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30120">
+object-unit</a>
+</td>
+<td class="summary">
+object</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30254">
+possibility-drs</a>
+</td>
+<td class="summary">
+possibility</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30163">
+predicate-ind-obj-ref</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30164">
+predicate-obj-ref</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30167">
+predicate-ref</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30161">
+predicate-sentid</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30165">
+predicate-subj-ref</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30162">
+predicate-type</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30166">
+predicate-verb</a>
+</td>
+<td class="summary">
+predicate</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30140">
+property-adjective</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30137">
+property-comp-target</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30138">
+property-degree</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30141">
+property-ref1</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30139">
+property-ref2</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30136">
+property-ref3</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30134">
+property-sentid</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30135">
+property-type</a>
+</td>
+<td class="summary">
+property</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30284">
+proposition-drs</a>
+</td>
+<td class="summary">
+proposition</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30285">
+proposition-ref</a>
+</td>
+<td class="summary">
+proposition</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30216">
+query-question-word</a>
+</td>
+<td class="summary">
+query</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30217">
+query-ref</a>
+</td>
+<td class="summary">
+query</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30215">
+query-sentid</a>
+</td>
+<td class="summary">
+query</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30293">
+question-drs</a>
+</td>
+<td class="summary">
+question</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30081">
+real-expression-real</a>
+</td>
+<td class="summary">
+real-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30268">
+recommendation-drs</a>
+</td>
+<td class="summary">
+recommendation</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30067">
+referent-defining-conditions</a>
+</td>
+<td class="summary">
+referent</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30069">
+referent-name</a>
+</td>
+<td class="summary">
+referent</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30068">
+referent-referers</a>
+</td>
+<td class="summary">
+referent</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30152">
+relation-ref1</a>
+</td>
+<td class="summary">
+relation</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30151">
+relation-ref2</a>
+</td>
+<td class="summary">
+relation</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30150">
+relation-sentid</a>
+</td>
+<td class="summary">
+relation</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30103">
+sentid</a>
+</td>
+<td class="summary">
+sentid-mixin</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30094">
+set-expression-elements</a>
+</td>
+<td class="summary">
+set-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30084">
+string-expression-string</a>
+</td>
+<td class="summary">
+string-expression</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drs.html#_g30105">
+type</a>
+</td>
+<td class="summary">
+type-mixin</td>
+</tr>
+</table>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30066">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+referent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:referers&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:defining-conditions&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The name of the referent, preserved from the DRSXML. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+referers&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Predicates that refer to the referent. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+defining-conditions&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+DRS conditions which define the referent. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30067">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+referent-defining-conditions&nbsp;&nbsp;</td>
+<td class="lambda-list">
+referent</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the defining-conditions of the specified referent 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30068">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+referent-referers&nbsp;&nbsp;</td>
+<td class="lambda-list">
+referent</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the referers of the specified referent 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30069">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+referent-name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+referent</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the name of the specified referent 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30073">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Expression is a parent class of all ACE 
+ expressions. Expressions correspond to Prolog terms. The classes 
+ representing expressions are: 
+ </p>
+<ul>
+<li>
+<p>
+<a href="drs.html#_g30074">
+named-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30077">
+int-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30080">
+real-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30083">
+string-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30086">
+compound-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30090">
+list-expression</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30093">
+set-expression</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30074">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+named-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Named expressions denote objects with proper names. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The string that is the proper name. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30075">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+named-expression-name&nbsp;&nbsp;</td>
+<td class="lambda-list">
+named-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the name of the specified named-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30077">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+int-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Int-expressions denote integer values. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:integer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+integer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The number of the integer expression. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30078">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+int-expression-integer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+int-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the integer of the specified int-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30080">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+real-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Real-expressions denote real (number) values. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:real&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+real&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The real of the real expression. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30081">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+real-expression-real&nbsp;&nbsp;</td>
+<td class="lambda-list">
+real-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the real of the specified real-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30083">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+string-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+String-expressions denote strings. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The string of the string expression. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30084">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+string-expression-string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+string-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the string of the specified string-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30086">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+compound-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Compound expressions denote the application of an operator to a 
+ sequence of arguments. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:operator&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:arguments&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+operator&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The operator of the compound expression. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+arguments&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The arguments of the compound expression. Example suggest that 
+ compound expressions always have exactly two arguments. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30087">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+compound-expression-arguments&nbsp;&nbsp;</td>
+<td class="lambda-list">
+compound-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the arguments of the specified compound-expression 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30088">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+compound-expression-operator&nbsp;&nbsp;</td>
+<td class="lambda-list">
+compound-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the operator of the specified compound-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30090">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+list-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+List-expressions denote lists. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The elements of the list expression. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30091">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+list-expression-elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+list-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the elements of the specified list-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30093">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+set-expression&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30073"><em class="cl">expression</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Set-expressions denote sets. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The elements of the set expression. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30094">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+set-expression-elements&nbsp;&nbsp;</td>
+<td class="lambda-list">
+set-expression</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the elements of the specified set-expression 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30096">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+drs-condition&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+drs-condition is the class of object which can 
+ appear in the conditions of a <a href="drs.html#_g30306">
+drs</a>
+. It is a parent 
+ class to all of the various types of drs conditions, and should never 
+ be instantiated directly. The types of drs conditions are: 
+ </p>
+<ul>
+<li>
+<p>
+<a href="drs.html#_g30306">
+drs</a>
+
+ </p>
+</li>
+<li>
+<p>
+Simple Conditions 
+ </p>
+<ul>
+<li>
+<p>
+<a href="drs.html#_g30114">
+object</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30133">
+property</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30149">
+relation</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30160">
+predicate</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30176">
+modifier-adv</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30189">
+modifier-pp</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30202">
+has-part</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30214">
+query</a>
+
+ </p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+Complex Conditions 
+ </p>
+<ul>
+<li>
+<p>
+<a href="drs.html#_g30223">
+negation</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30230">
+negation-as-failure</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30237">
+implication</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30245">
+disjunction</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30253">
+possibility</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30260">
+necessity</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30267">
+recommendation</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30274">
+admissibility</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30283">
+proposition</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30292">
+question</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drs.html#_g30299">
+command</a>
+
+ </p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30101">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+sentid-mixin&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The class of objects that can be associated with a sentence. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:tokid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+An integer greater than 0 indicating the sentence of which a 
+ component corresponds to the object. 
+ </p>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+tokid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+An integer greater than 0 indicating which token within the 
+ sentence the object corresponds to. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30103">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+sentid-mixin</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified sentid-mixin 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30104">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+type-mixin&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The class of objects that can be typed. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Slot]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The type of the thing when the DRS is typed. 
+ </p>
+</div>
+</div>
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30105">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+type-mixin</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified type-mixin 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30114">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:noun&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:quant&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:unit&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:op&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:count&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:dim-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30115">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30116">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-dim-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the dim-type of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30117">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30118">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-count&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the count of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30119">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-op&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the op of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30120">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-unit&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the unit of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30121">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-quant&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the quant of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30122">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-noun&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the noun of the specified object 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30123">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+object</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref of the specified object 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30133">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:adjective&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:comp-target&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref3&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30134">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30135">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30136">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-ref3&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref3 of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30137">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-comp-target&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the comp-target of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30138">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the degree of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30139">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref2 of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30140">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-adjective&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the adjective of the specified property 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30141">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+property</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref1 of the specified property 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30149">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+relation&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30150">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+relation-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+relation</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified relation 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30151">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+relation-ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+relation</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref2 of the specified relation 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30152">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+relation-ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+relation</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref1 of the specified relation 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30160">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:verb&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:subj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:obj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ind-obj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30161">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30162">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30163">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-ind-obj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ind-obj-ref of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30164">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-obj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the obj-ref of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30165">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-subj-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the subj-ref of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30166">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-verb&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the verb of the specified predicate 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30167">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+predicate-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+predicate</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref of the specified predicate 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30176">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:adverb&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30177">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-adv</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified modifier-adv 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30178">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-adv</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified modifier-adv 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30179">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-adv</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the degree of the specified modifier-adv 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30180">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-adverb&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-adv</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the adverb of the specified modifier-adv 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30181">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-adv</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref of the specified modifier-adv 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30189">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a>, <a href="drs.html#_g30104"><em class="cl">type-mixin</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:preposition&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30190">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified modifier-pp 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30191">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp-type&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the type of the specified modifier-pp 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30192">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp-ref2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref2 of the specified modifier-pp 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30193">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp-preposition&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the preposition of the specified modifier-pp 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30194">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-pp-ref1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+modifier-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref1 of the specified modifier-pp 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30202">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+has-part&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:group-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:member-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30203">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+has-part-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+has-part</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified has-part 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30204">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+has-part-member-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+has-part</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the member-ref of the specified has-part 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30205">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+has-part-group-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+has-part</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the group-ref of the specified has-part 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30214">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+query&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a> and <a href="drs.html#_g30101"><em class="cl">sentid-mixin</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:question-word&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30215">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+query-sentid&nbsp;&nbsp;</td>
+<td class="lambda-list">
+query</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the sentid of the specified query 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30216">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+query-question-word&nbsp;&nbsp;</td>
+<td class="lambda-list">
+query</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the question-word of the specified query 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30217">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+query-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+query</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref of the specified query 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30223">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+negation&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30224">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+negation-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+negation</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified negation 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30230">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+negation-as-failure&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30231">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+negation-as-failure-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+negation-as-failure</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified negation-as-failure 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30237">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+implication&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:antecedent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:consequent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30238">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+implication-consequent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+implication</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the consequent of the specified implication 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30239">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+implication-antecedent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+implication</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the antecedent of the specified implication 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30245">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+disjunction&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30246">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+disjunction-drs2&nbsp;&nbsp;</td>
+<td class="lambda-list">
+disjunction</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs2 of the specified disjunction 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30247">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+disjunction-drs1&nbsp;&nbsp;</td>
+<td class="lambda-list">
+disjunction</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs1 of the specified disjunction 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30253">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+possibility&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30254">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+possibility-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+possibility</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified possibility 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30260">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+necessity&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30261">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+necessity-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+necessity</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified necessity 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30267">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+recommendation&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30268">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+recommendation-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+recommendation</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified recommendation 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30274">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+admissibility&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30275">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+admissibility-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+admissibility</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified admissibility 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30283">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+proposition&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30284">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+proposition-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+proposition</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified proposition 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30285">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+proposition-ref&nbsp;&nbsp;</td>
+<td class="lambda-list">
+proposition</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the ref of the specified proposition 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30292">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+question&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30293">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+question-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+question</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified question 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30299">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+command&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30300">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+command-drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+command</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the drs of the specified command 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g30306">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+drs&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="drs.html#_g30096"><em class="cl">drs-condition</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:domain&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:conditions&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30307">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+drs-conditions&nbsp;&nbsp;</td>
+<td class="lambda-list">
+drs</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the conditions of the specified drs 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30308">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+drs-domain&nbsp;&nbsp;</td>
+<td class="lambda-list">
+drs</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the domain of the specified drs 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30106">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-quant&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :dom :mass :countable))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Quantities are one of <span class="keyword">
+:dom, </span>
+<span class="keyword">
+:mass, </span>
+<span class="keyword">
+:countable, </span>
+and 
+ indicate the quantisation of an object. 
+ </p>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30107">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+object-op&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :eq :geq :greater :exactly :na))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+One of <span class="keyword">
+:eq, </span>
+<span class="keyword">
+:geq, </span>
+<span class="keyword">
+:greater, </span>
+<span class="keyword">
+:exactly, </span>
+<span class="keyword">
+:na. </span>
+
+ </p>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30125">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :pos :pos-as :comp :comp-than :sup))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Property degree values are one of the following: <span class="keyword">
+:pos, </span>
+<span class="keyword">
+:pos-as, </span>
+
+ <span class="keyword">
+:comp, </span>
+<span class="keyword">
+:comp-than, </span>
+and <span class="keyword">
+:sup. </span>
+
+ </p>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30126">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+property-comp-target&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :subj :obj))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Property comp-target values are either <span class="keyword">
+:subj, </span>
+or <span class="keyword">
+:obj, </span>
+indicating 
+ whether the target of the comparison is the subject or the object of 
+ the sentence. 
+ </p>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30169">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+modifier-adv-degree&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :pos :comp :sup))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Possible adverb modifier degrees: <span class="keyword">
+:pos, </span>
+<span class="keyword">
+:comp, </span>
+<span class="keyword">
+:sup. </span>
+
+ </p>
+</div>
+</div>
+<div class="deftype">
+<div class="defunsignatures">
+<a id="_g30207">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+query-question-word&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(quote (member :who :what :which :how :where :when))</td>
+<td class="symbol-type">
+&nbsp;[Type]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Possible values for query question words: <span class="keyword">
+:who, </span>
+<span class="keyword">
+:what, </span>
+<span class="keyword">
+:which, </span>
+
+ <span class="keyword">
+:how, </span>
+<span class="keyword">
+:where, </span>
+<span class="keyword">
+:when. </span>
+
+ </p>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2009-06-20 14:28:01</div>
+</body>
+</html>

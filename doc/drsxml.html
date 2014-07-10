@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+drsxml</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="expressions.html">
+Prev:&nbsp;expressions</a>
+<br/>
+<a href="ape.html">
+Next:&nbsp;ape</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+drsxml</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+drsxml
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Method summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drsxml.html#_g30341">
+extract-drs-condition-from-element</a>
+</td>
+<td class="summary">
+kind element</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drsxml.html#_g30340">
+drs-condition-from-element</a>
+</td>
+<td class="summary">
+element</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drsxml.html#_g30342">
+extract-drs-conditions-from-node-list</a>
+</td>
+<td class="summary">
+node-list</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drsxml.html#_g30344">
+parse-drsxml</a>
+</td>
+<td class="summary">
+blob</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Macro summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="drsxml.html#_g30343">
+define-drs-condition-extractor</a>
+</td>
+<td class="summary">
+element-name class-name (element) <em>&amp;body</em> body</td>
+</tr>
+</table>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30341">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+extract-drs-condition-from-element&nbsp;&nbsp;</td>
+<td class="lambda-list">
+kind element</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+extract-drs-condition-from-node kind element =&gt; drs-condition 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+kind --- a class, or a symbol that names a class 
+ </p>
+</li>
+<li>
+<p>
+node --- a DOM element 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Extract-drs-condition-from-element builds a drs-condition, specifically 
+ of type kind from element. How this particular process is carried out 
+ depends on the kind of object being constructed. 
+ </p>
+<p>
+Extract-drs-condition-from-element should usually not be called by 
+ user code directly, but rather by 
+ <a href="drsxml.html#_g30340">
+drs-condition-from-element</a>
+. Similarly, it is not expected 
+ that extract-condition-from-element methods will be defined directly, 
+ but rather using <a href="drsxml.html#_g30343">
+define-drs-condition-extractor</a>
+. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+<a href="drsxml.html#_g30340">
+drs-condition-from-element</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drsxml.html#_g30343">
+define-drs-condition-extractor</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30340">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+drs-condition-from-element&nbsp;&nbsp;</td>
+<td class="lambda-list">
+element</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+drs-condition-from-node node =&gt; drs-condition 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+element --- a DOM element 
+ </p>
+</li>
+<li>
+<p>
+drs-condition --- a <a href="drs.html#_g30096">
+drs-condition</a>
+
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Extracts a drs-condition from element. The type of <a href="drs.html#_g30096">
+drs-condition</a>
+to 
+ build is determined based on the element's tag name (based on a mapping established by 
+ <a href="drsxml.html#_g30343">
+define-drs-condition-extractor</a>
+) 
+ and then <a href="drsxml.html#_g30341">
+extract-drs-condition-from-element</a>
+is applied to the 
+ type the element. The resulting drs-condition is returned. 
+ </p>
+<h4>
+Exceptional Situations: </h4>
+<p>
+If the element's tag name does not correspond to a class, an error is 
+ signalled. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30342">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+extract-drs-conditions-from-node-list&nbsp;&nbsp;</td>
+<td class="lambda-list">
+node-list</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+extract-drs-conditions-from-node-list node-list =&gt; conditions 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+node-list --- a DOM node list 
+ </p>
+</li>
+<li>
+<p>
+conditions --- a list of <a href="drs.html#_g30096">
+drs-condition</a>
+
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+Returns a list of drs-conditions extracted from the DOM element nodes 
+ in node list. Conditions are extracted from element nodes using 
+ <a href="drsxml.html#_g30340">
+drs-condition-from-element</a>
+. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30344">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-drsxml&nbsp;&nbsp;</td>
+<td class="lambda-list">
+blob</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+parse-drsxml blob =&gt; drs 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+blob --- a string (or other suitable input for cxml:parse) 
+ </p>
+</li>
+<li>
+<p>
+drs --- a <a href="drs.html#_g30306">
+drs</a>
+object 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+<a href="drsxml.html#_g30344">
+parse-drsxml</a>
+parses the XML representation of a DRS in 
+ the format produced by the APE Webservice. The XML representation is 
+ parsed by Closure XML [1], particularly using the function cxml:parse 
+ [2]. cxml:parse can accept strings, pathnames, octet vectors or 
+ streams. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+[1] <a href="http://common-lisp.net/project/cxml/">
+http://common-lisp.net/project/cxml/</a>
+
+ </p>
+</li>
+<li>
+<p>
+[2] <a href="http://common-lisp.net/project/cxml/sax.html">
+http://common-lisp.net/project/cxml/sax.html</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g30343">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+define-drs-condition-extractor&nbsp;&nbsp;</td>
+<td class="lambda-list">
+element-name class-name (element) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<h4>
+Syntax: </h4>
+<p>
+define-drs-condition-extractor 
+ element-name class-name (element) [[declaration* | documentation ]] form* 
+ </p>
+<h4>
+Arguments and Values: </h4>
+<ul>
+<li>
+<p>
+element-name --- a string 
+ </p>
+</li>
+<li>
+<p>
+class-name --- a symbol or class, not evaluated 
+ </p>
+</li>
+<li>
+<p>
+element --- a variable 
+ </p>
+</li>
+</ul>
+<h4>
+Description: </h4>
+<p>
+define-drs-condition-extractor associates element-name with class-name 
+ (via <a href="drsxml.html#_g30338">
+install-element-name-drs-condition-type-mapping</a>
+), and 
+ defines a method on <a href="drsxml.html#_g30341">
+extract-drs-condition-from-element</a>
+
+ whose first parameter is specialized with (eql class-name), and whose 
+ second parameter is non-specialized, and named node. Declarations, 
+ documentation, and forms appear as the body of the method. The body 
+ should construct and return a drs-condition of type class-name from the 
+ element. 
+ </p>
+<h4>
+See Also: </h4>
+<ul>
+<li>
+<p>
+<a href="drsxml.html#_g30341">
+extract-drs-condition-from-element</a>
+
+ </p>
+</li>
+<li>
+<p>
+<a href="drsxml.html#_g30338">
+install-element-name-drs-condition-type-mapping</a>
+
+ </p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2009-06-20 14:28:01</div>
+</body>
+</html>
